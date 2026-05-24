@@ -12,6 +12,7 @@ export default function SakytineIstorijaSection({ id }: { id: string }) {
 
   const heading = resolveText("sakytine_heading");
   const body    = resolveText("text20");
+  const body2   = resolveText("text22");
 
   return (
     <section
@@ -47,6 +48,16 @@ export default function SakytineIstorijaSection({ id }: { id: string }) {
           style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
         >
           {body}
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1.8, delay: 0.8, ease: EASE }}
+          className="font-serif italic text-[#5e6858]/65 leading-loose max-w-3xl mt-6"
+          style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
+        >
+          {body2}
         </motion.p>
 
       </div>
