@@ -44,7 +44,7 @@ export default function SakytineIstorijaSection({ id }: { id: string }) {
           initial={{ opacity: 0, y: 12 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.8, delay: 0.5, ease: EASE }}
-          className="font-serif italic text-[#5e6858]/65 leading-loose max-w-3xl"
+          className="font-serif text-[#5e6858]/80 leading-relaxed max-w-3xl"
           style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
         >
           {body}
@@ -54,7 +54,7 @@ export default function SakytineIstorijaSection({ id }: { id: string }) {
           initial={{ opacity: 0, y: 12 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1.8, delay: 0.8, ease: EASE }}
-          className="font-serif italic text-[#5e6858]/65 leading-loose max-w-3xl mt-6"
+          className="font-serif text-[#5e6858]/80 leading-relaxed max-w-3xl mt-10"
           style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
         >
           {body2}

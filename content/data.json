@@ -34,7 +34,7 @@
   ],
   "photo2": { "src": "/images/photo2.jpg", "alt": "photo2", "caption": "\"Tarybų Lietuva\" 1969m. LRT archyvas, stopkadro nuotr." },
 
-  "quote1": "“Aš savo sodą gavau 79 metais, buvo skirstoma per darbovietes…sodininko sklypo plotas 6 arai…kiek duoda…ar šimtui žmonių…priklauso nuo darbovietės.” -Audrius",
+  "quote1": "“Aš savo sodą gavau 79 metais, buvo skirstoma per darbovietes…sodininko sklypo plotas 6 arai…kiek duoda…ar šimtui žmonių…priklauso nuo darbovietės.” -Pašnekvoas 1",
   "transition_label_before": "prieš — before",
   "transition_label_after":  "po — after",
   "transition_foot_before":  "prieš",
@@ -58,7 +58,7 @@
     "mapType":  "garden",
     "caption":  "Vilniaus sodų bendrijų plėtros kryptys sovietmečiu"
   },
-  "map_disclaimer": "Žemėlapiuose gali būti mažų neatitikimų, jie skirti parodyti tendencijas",
+  "map_disclaimer": "Žemėlapiuose gali būti mažų neatitikimų; jų paskirtis - parodyti tendencijas",
 
   "sakytine_heading": "Sakytinės istorijos",
   "text20": "Šis projektas remiasi sakytinės istorijos metodu - interviu pokalbiai su sodų bendrijų gyventojais, esamais ir buvusiais. Juose fiksuoti asmeniniai prisiminimai apie jų sodo atsiradimą, bendruomenę, laisvės pojūtį. Ši medžiaga nėra objektyvi ar pilna istorija - tai pasakojimai, atskleidžiantys individualias patirtis sovietinio gyvenimo kontekste. Likusi medžiaga veikia kaip papildomas kontekstas, kuriuo siekiama geriau įprasminti kalbintų pašnekovų pasakojimus.",
@@ -66,23 +66,23 @@
   "escapism_label":    "Pabėgimas iš sovietinio gyvenimo",
   "text3": "“Galėjai jaustis lyg tu vienas, darai ką nori” - Pašnekovė",
   "contradiction_label": "Kasdienybės tęsinys?",
-  "text4": "“Tėtis bandydavo vaizduoti kad čia statoma relaksacijos bazė… bet relaksacijos čia nelabai būdavo. Atleki ten tai sarašiukas problemų, ten vamzdis trūko ten laidas nekontaktuoja…” - Valdas.",
+  "text4": "“Tėtis bandydavo vaizduoti kad čia statoma relaksacijos bazė… bet relaksacijos čia nelabai būdavo. Atleki ten tai sarašiukas problemų, ten vamzdis trūko ten laidas nekontaktuoja…” - Pašnekovas 2.",
   "escapism_footer": "Pabėgimo erdvė — sodų bendrija",
 
-  "text5": "“Supratimo apie statybos darbus absoliučiai, žalio supratimo neturėjau, bet buvo noras (...) čia mano, svarbiausia” - Audrius",
-  "text6": "“Medžiagų buvo labai sunku gauti, tekdavo kombinuoti (...) palyginti su šiais laikais statybos soduose vykdavo sunkiai” - Valdas",
+  "text5": "“Supratimo apie statybos darbus absoliučiai, žalio supratimo neturėjau, bet buvo noras (...) čia mano, svarbiausia” - Pašnekovas 1",
+  "text6": "“Medžiagų buvo labai sunku gauti, tekdavo kombinuoti (...) palyginti su šiais laikais statybos soduose vykdavo sunkiai” - Pašnekovas 2",
   "audio_archive_label": "Garso archyvas",
   "audio1": { "src": "/audio/audio1.m4a", "title": "Sodų bendrijos gyventojo pasakojimas apie jo statybų procesą", "caption": null },
   "photo3": { "src": null, "alt": "photo3", "caption": null },
   "photo4": { "src": "/images/photo4.jpg", "alt": "photo4", "caption": "Nuotrauka iš serijos „MAGIC\" ciklo „LSD – Lietuvos sodų draugija\" | I. Maldžiūno nuotr." },
   "diy_section_label": "Sodų statybos",
 
-  "quote2": "“Mūsų sode, kadangi negalėjai atšvesti kokių nors žiemos švenčių (...) bet jau vasarą jonines buvo mūsų didžiausia šventė (...) Bute tu to negali padaryt, tavo butas mažas. Tu negali prikviest šitiek žmonių į savo butą šventei.” - Pašnekovė",
-  "quote3": ["“Mieste su kaimynais faktiškai nebendravom…vienu žodžiu persimeti susitikęs…o sode ir pasišneki, ir užeidavo vieni pas kitus…” - Audrius",
+  "quote2": "“Mūsų sode, kadangi negalėjai atšvesti kokių nors žiemos švenčių (...) vasarą jonines buvo mūsų didžiausia šventė (...) Bute tu to negali padaryt, tavo butas mažas. Tu negali prikviest šitiek žmonių į savo butą šventei.” - Pašnekovė",
+  "quote3": ["“Mieste su kaimynais faktiškai nebendravom…vienu žodžiu persimeti susitikęs…o sode ir pasišneki, ir užeidavo vieni pas kitus…” - Pašnekovas 1",
   "“Neatsimenu ne vieno blogo kaimyno. Visi kaimynai kažkaip buvo geranoriški… O va darbe, darbe buvo konkurencija žvėriška!” - Pašnekovė"
   ],
-  "quote5": [ "“turėjome tokį... Nuo statybų  buvo likę juodo, 40mm skersmens vamzdžio. Gan ilgas gabalas. Tai sugalvojom kad reiktų pabandyti padaryti karštą vandenį.. apdengiu polietilenu ir I dušą. Tai saulėtą dieną veikė stebėtinai gerai. Jei pavėlavai ateiti tai gali ir nusiplikyti” - Valdas.",
-  "“Aš ir mieste jaučiausi laisvai ir sode laisvai (...) Su noru važiuodavai, ir žiemą, galų gale (...) nuovažiuoji, padarai sienos porą metrų, ar lubų, ir jau smagu - radai pasitenkinimą.” - Audrius" 
+  "quote5": [ "“turėjome tokį... Nuo statybų  buvo likę juodo, 40mm skersmens vamzdžio. Gan ilgas gabalas. Tai sugalvojom kad reiktų pabandyti padaryti karštą vandenį.. apdengiu polietilenu ir I dušą. Tai saulėtą dieną veikė stebėtinai gerai. Jei pavėlavai ateiti tai gali ir nusiplikyti” - Pašnekovas 2.",
+  "“Aš ir mieste jaučiausi laisvai ir sode laisvai (...) Su noru važiuodavai, ir žiemą, galų gale (...) nuovažiuoji, padarai sienos porą metrų, ar lubų, ir jau smagu - radai pasitenkinimą.” - Pašnekovas 1" 
   ],
   "quote6": "“Tai buvo kažkas tai tokio savo. Tu va turėsi kažką tai. Galėsi įgyvendinti savo svajonę!” - Pašnekovė",
   "social_sections": [
@@ -100,9 +100,9 @@
   "photo8":  { "src": null, "alt": "photo8",  "caption": null },
   "photo9":  { "src": null, "alt": "photo9",  "caption": null },
   "photo10": { "src": null, "alt": "photo10", "caption": null },
-  "quote7":  "“(...) eini pas kitus žiūrėti kaip kiti stato, ką daro, mokaisi iš kitų (...) rezultato laukimas. O kai pastatyta jau, malonumas labai.” - Audrius",
-  "quote8":  "“Man simbolizuoja Šermukšnis, aš... pasisodinau pirmiausia šermukšnį tai man primena kaimą nes pas senelius ribos buvo... pasodintas šermukšnis ir už šermukšnio.. kaimyno eina.. žemė.” - Valdas",
-  "quote9":  "“Gal tokia konfliktiška detalė.. (juokiasi) mama mėgdavo labai anksti keltis, už ką ir gaudavo kartais pastabų iš kaimynių. Ar sekmadienis ar pirmadienis žiūrėk 5-a ryto... nors ji jau stengdavosi bet jau kad sužvanga kibirai... kastuvas į kažką atsitrenkia... Gal toks va dalykas.” - Jonas",
+  "quote7":  "“(...) eini pas kitus žiūrėti kaip kiti stato, ką daro, mokaisi iš kitų (...) rezultato laukimas. O kai pastatyta jau, malonumas labai.” - Pašnekovas 1",
+  "quote8":  "“Man simbolizuoja Šermukšnis, aš... pasisodinau pirmiausia šermukšnį tai man primena kaimą nes pas senelius ribos buvo... pasodintas šermukšnis ir už šermukšnio.. kaimyno eina.. žemė.” - Pašnekovas 2",
+  "quote9":  "“Gal tokia konfliktiška detalė.. (juokiasi) mama mėgdavo labai anksti keltis, už ką ir gaudavo kartais pastabų iš kaimynių. Ar sekmadienis ar pirmadienis žiūrėk 5-a ryto... nors ji jau stengdavosi bet jau kad sužvanga kibirai... kastuvas į kažką atsitrenkia... Gal toks va dalykas.” - Pašnekovas 3",
   "quote10": "“Sode tu turėjai galimybę dirbti darže, gali tvarkytis vienas namie, nėra šalia arti žmonių. Galėjai namą apsisodinti, taip, kaip tu norėjai.” - Pašnekovė",
 
   "final_quote":  "Kai kuriems kolektyviniai sodai buvo galimybė pabėgti nuo juos veikiančios sistemos, o kai kuriems - tik būdas praskaidrinti kasdienybę. Tiek vieniems, tiek kitiems, kolektyviniai sodai buvo, galų gale, maloni vieta, leidžianti bent trumpam pabūti tiesiog savimi",
@@ -123,6 +123,7 @@
 
   "ka_pasakoja_heading": "Ką pasakoja sodai?",
   "text21": "Ši analizė mums rodo XYZ",
+  "text23": "text23 text23 text23 text23 text23 text23 text23 text23",
   "svetur_title":    "Sodų tradicijos svetur",
   "svetur_subtitle": "Sodo kaip pabėgimo ir autonomijos forma neapsiribojo vien Lietuva — panašios struktūros kilo visame sovietiniame bloke ir toliau",
 

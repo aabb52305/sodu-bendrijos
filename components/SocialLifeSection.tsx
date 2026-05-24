@@ -157,50 +157,6 @@ function SubCentered({ data }: { data: SubData }) {
   );
 }
 
-function SubLeftNum({ data }: { data: SubData }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.8 }}
-      viewport={{ once: true, margin: "-60px" }}
-      className="min-h-[80vh] flex items-center py-28"
-    >
-      <div className="max-w-7xl mx-auto px-8 lg:px-16 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <motion.div
-          initial={{ opacity: 0, y: 10, filter: "blur(3px)" }}
-          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ duration: 1.8, ease: EASE }}
-          viewport={{ once: true, margin: "-60px" }}
-        >
-          <h3
-            className="font-serif font-normal text-[#2c302a]/80 leading-tight"
-            style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
-          >
-            {data.title}
-          </h3>
-          <div className="w-8 h-px bg-[#9ab08e]/30 mt-5" />
-        </motion.div>
-        <div className="space-y-10">
-          {data.quoteLines.map((line, i) => (
-            <motion.p
-              key={i}
-              initial={{ opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.8, delay: 0.2 + i * 0.3, ease: EASE }}
-              viewport={{ once: true, margin: "-60px" }}
-              className="font-serif italic text-[#5e6858]/75 leading-relaxed"
-              style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.5rem)" }}
-            >
-              {line}
-            </motion.p>
-          ))}
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
 function SubRightLine({ data }: { data: SubData }) {
   return (
     <motion.div
@@ -289,7 +245,6 @@ export default function SocialLifeSection({ id }: { id: string }) {
           <Divider />
           {sub.layout === "fullquote"  && <SubFullQuote  data={sub} />}
           {sub.layout === "centered"   && <SubCentered   data={sub} />}
-          {sub.layout === "leftnum"    && <SubLeftNum    data={sub} />}
           {sub.layout === "rightline"  && <SubRightLine  data={sub} />}
           {sub.layout === "fullcenter" && <SubFullCenter data={sub} />}
         </div>

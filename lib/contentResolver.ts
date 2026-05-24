@@ -24,7 +24,7 @@ export interface AudioContent {
 export interface SocialSectionContent {
   title: string;
   quoteId: string;
-  layout: "fullquote" | "centered" | "leftnum" | "rightline" | "fullcenter";
+  layout: "fullquote" | "centered" | "rightline" | "fullcenter";
 }
 
 export interface SymbolismItemContent {
