@@ -1,0 +1,148 @@
+{
+  "site_title": "Sodų Bendrijos",
+  "site_description": "Sovietinių visuomenių antropologija",
+
+  "nav_header": "Planas",
+  "nav_labels": {
+    "hero":         "Pradžia",
+    "first-visual": "Vaizdas",
+    "origin":       "Ištakos",
+    "transition":   "Kaita",
+    "maps":         "Vieta",
+    "escapism":     "Pabėgimas",
+    "diy":          "Kūryba",
+    "social":       "Gyvenimas",
+    "symbolism":    "Simboliai",
+    "svetur":       "Svetur",
+    "final":        "Pabaiga"
+  },
+
+  "hero_subtitle": "Sovietinių visuomenių antropologija",
+  "hero_line1": ["Neformali", " socialinė", " aplinka"],
+  "hero_line2": [" ir", " žmonių", " autonomija"],
+  "hero_line3": [" sovietmečio", " soduose"],
+
+  "photo1": { "src": "/images/photo1.jpg", "alt": "photo1", "caption": null },
+
+  "origin_heading":        "Sodų Bendrijų",
+  "origin_heading_accent": "atsiradimo priežastys",
+  "text1": [
+    "Sovietmečiu kurtos sodų bendrijos - tai kolektyviniai sklypų masyvai, kuriuose miestų gyventojams paskirti nedideli žemės plotai sodininkystei ir poilsiui. Iš pradžių - tai buvo bandymas spręsti maisto trūkumą bei reguliuoti spartėjančią urbanizaciją.",
+    "Lietuvoje pirmosios sodininkų bendrijos pradėtos kurti 1953 Vilniuje. 1959 įsteigta jas vienijanti Lietuvos sodininkystės draugija, 1987-91 vadinta Respublikiniu agropramoniniu susivienijimu Sodai."
+  ],
+  "photo2": { "src": "/images/photo2.jpg", "alt": "photo2", "caption": "\"Tarybų Lietuva\" 1969m. LRT archyvas, stopkadro nuotr." },
+
+  "quote1": "“Aš savo sodą gavau 79 metais, buvo skirstoma per darbovietes…sodininko sklypo plotas 6 arai…kiek duoda…ar šimtui žmonių…priklauso nuo darbovietės.” -Audrius",
+  "transition_label_before": "prieš — before",
+  "transition_label_after":  "po — after",
+  "transition_foot_before":  "prieš",
+  "transition_foot_drag":    "vilkite",
+  "transition_foot_after":   "po",
+
+  "text2": "Sodų plėtra - atsakas į sparčią urbanizaciją",
+  "map1": {
+    "src":      "/images/map1.jpg",
+    "label":    "MAP1 PLACEHOLDER",
+    "sublabel": "Vilnius expansion",
+    "tag":      "map1",
+    "mapType":  "urban",
+    "caption":  "Vilniaus urbanizacijos kryptys sovietmečiu"
+  },
+  "map2": {
+    "src":      "/images/map2.jpg",
+    "label":    "MAP2 PLACEHOLDER",
+    "sublabel": "Sodų expansion",
+    "tag":      "map2",
+    "mapType":  "garden",
+    "caption":  "Vilniaus sodų bendrijų plėtros kryptys sovietmečiu"
+  },
+  "map_disclaimer": "Žemėlapiuose gali būti mažų neatitikimų, jie skirti parodyti tendencijas",
+
+  "escapism_label":    "Pabėgimas iš sovietinio gyvenimo",
+  "text3": "“Galėjai jaustis lyg tu vienas, darai ką nori” - Marija",
+  "contradiction_label": "Kasdienybės tęsinys",
+  "text4": "text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4.",
+  "escapism_footer": "Pabėgimo erdvė — sodų bendrija",
+
+  "text5": "“Supratimo apie statybos darbus absoliučiai, žalio supratimo neturėjau, bet buvo noras (...) čia mano, svarbiausia” - Audrius",
+  "text6": "“Medžiagų buvo labai sunku gauti, tekdavo kombinuoti (...) palyginti su šiais laikais statybos soduose vykdavo sunkiai” - Valdas",
+  "audio_archive_label": "Garso archyvas",
+  "audio1": { "src": "/audio/audio1.m4a", "title": "Sodų bendrijos gyventojo pasakojimas apie jo statybų procesą", "caption": null },
+  "photo3": { "src": null, "alt": "photo3", "caption": null },
+  "photo4": { "src": "/images/photo4.jpg", "alt": "photo4", "caption": "Nuotrauka iš serijos „MAGIC\" ciklo „LSD – Lietuvos sodų draugija\" | I. Maldžiūno nuotr." },
+  "diy_section_label": "Sodų statybos",
+
+  "quote2": "“Mūsų sode, kadangi negalėjai atšvesti kokių nors žiemos švenčių (...) bet jau vasarą jonines buvo mūsų didžiausia šventė (...) Bute tu to negali padaryt, tavo butas mažas. Tu negali prikviest šitiek žmonių į savo butą šventei.” - Marija",
+  "quote3": ["“Mieste su kaimynais faktiškai nebendravom…vienu žodžiu persimeti susitikęs…o sode ir pasišneki, ir užeidavo vieni pas kitus…” - Audrius",
+  "“Neatsimenu ne vieno blogo kaimyno. Visi kaimynai kažkaip buvo geranoriški… O va darbe, darbe buvo konkurencija žvėriška!” - Marija"
+  ],
+  "quote4": "quote unfinished",
+  "quote5": [ "“Tėtis bandydavo vaizduoti kad čia statoma relaksacijos bazė… bet relaksacijos čia nelabai būdavo. Atleki ten tai sarašiukas problemų, ten vamzdis trūko ten laidas nekontaktuoja…” - Valdas",
+  "“Aš ir mieste jaučiausi laisvai ir sode laisvai (...) Su noru važiuodavai, ir žiemą, galų gale (...) nuovažiuoji, padarai sienos porą metrų, ar lubų, ir jau smagu - radai pasitenkinimą.” - Audrius" 
+  ],
+  "quote6": "“Tai buvo kažkas tai tokio savo. Tu va turėsi kažką tai. Galėsi įgyvendinti savo svajonę!” - Marija",
+  "social_sections": [
+    { "title": "Sodų šventės",   "quoteId": "quote2", "layout": "fullquote"  },
+    { "title": "Kaimynai",       "quoteId": "quote3", "layout": "centered"   },
+    { "title": "Darbas",         "quoteId": "quote5", "layout": "rightline"  },
+    { "title": "Laisvės pojūtis","quoteId": "quote6", "layout": "fullcenter" }
+  ],
+
+  "text7": "text7 text7 text7 text7",
+  "text8": "text8 text8 text8 text8 text8 text8 text8 text8 text8 text8 text8 text8 text8 text8 text8.",
+  "photo5":  { "src": null, "alt": "photo5",  "caption": null },
+  "photo6":  { "src": null, "alt": "photo6",  "caption": null },
+  "photo7":  { "src": null, "alt": "photo7",  "caption": null },
+  "photo8":  { "src": null, "alt": "photo8",  "caption": null },
+  "photo9":  { "src": null, "alt": "photo9",  "caption": null },
+  "photo10": { "src": null, "alt": "photo10", "caption": null },
+  "quote7":  "quote7 quote7 quote7 quote7 quote7 quote7",
+  "quote8":  "quote8 quote8 quote8 quote8 quote8 quote8",
+  "quote9":  "quote9 quote9 quote9 quote9 quote9 quote9",
+  "quote10": "quote10 quote10 quote10 quote10 quote10",
+  "quote11": "quote11 quote11 quote11 quote11 quote11",
+  "quote12": "quote12 quote12 quote12 quote12 quote12",
+  "symbolism_items": [
+    { "photoId": "photo5",  "quoteId": "quote7",  "gradient": "from-stone-100 via-[#dde8d5] to-stone-200" },
+    { "photoId": "photo6",  "quoteId": "quote8",  "gradient": "from-[#e2eadc] via-stone-100 to-[#d4dece]" },
+    { "photoId": "photo7",  "quoteId": "quote9",  "gradient": "from-stone-200 via-[#cdd8c5] to-stone-100" },
+    { "photoId": "photo8",  "quoteId": "quote10", "gradient": "from-[#e8e0d4] via-stone-100 to-stone-200" },
+    { "photoId": "photo9",  "quoteId": "quote11", "gradient": "from-stone-100 via-[#dae0d4] to-stone-200" },
+    { "photoId": "photo10", "quoteId": "quote12", "gradient": "from-[#e4ddd4] via-stone-200 to-stone-100" }
+  ],
+
+  "final_quote":  "Kai kuriems kolektyviniai sodai buvo galimybė pabėgti nuo juos veikiančios sistemos, o kai kuriems - tik būdas praskaidrinti kasdienybę. Tiek vieniems, tiek kitiems, kolektyviniai sodai buvo, galų gale, maloni vieta, leidžianti bent trumpam pabūti tiesiog savimi",
+  "final_footer": "Sodų Bendrijos",
+
+  "map_north":         "N↑",
+  "map_legend_labels": ["Urban zone", "Garden colony", "Key node", "Boundary"],
+
+  "symbolism_archive_label":  "Archyvas",
+  "symbolism_count_suffix":   "objektai",
+  "symbolism_heading": "Sodų simboliai",
+  "symbolism_blocks": [
+    { "title": "Tvora",    "quoteId": "quote7",  "description": "description placeholder" },
+    { "title": "Namelis",  "quoteId": "quote8",  "description": "description placeholder" },
+    { "title": "Daržas",   "quoteId": "quote9",  "description": "description placeholder" },
+    { "title": "Šventė",   "quoteId": "quote10", "description": "description placeholder" }
+  ],
+
+  "svetur_title":    "Sodų tradicijos svetur",
+  "svetur_subtitle": "Sodo kaip pabėgimo ir autonomijos forma neapsiribojo vien Lietuva — panašios struktūros kilo visame sovietiniame bloke ir toliau",
+
+  "state1_name": "Ukraina",
+  "text9":  "Kolektyvinių sodų sfera Ukrainoje - netoli Lietuviškosios. Svariausias jos požymis - ypatingas dėmesys sodybos būtent kaip vasarnamio paskirties išlaikymas. Atsivėrus Ukrainos KGB archyvams, rasti pranešimai iš 1965m. rodo, kad saugumo struktūros aktyviai sekė piliečius, kurie sodo sklypuose statydavo ištisus metus gyventi tinkamas dačias - piliečiai rizikuodavo atimtais butais, bei dešimtmečius besitęsiančiomis teismo bylomis.",
+  "photo11": { "src": "/images/photo11.jpg", "alt": "photo11", "caption": "Young Pioneers Tours nuotr." },
+
+  "state2_name": "Estija",
+  "text10": "Estija išsiskyrė stipria vasarnamių (suvila) kultūra, kurią veikė Skandinavijos šalių tradicijos. Skirtingai nei Lietuvoje, Estijoje egzistavo kolektyvinės vasarnamių bendrijos, kuriose daržininkavimas buvo griežtai draudžiamas, o sode pasisodinę daržovių šeimininkai buvo baudžiami. Todėl vasarnamiai buvo griežtai rekreacijos erdvė. Nepaisant to, 8-ojo dešimtmečio pabaigoje dėl šalyje susiklosčiusių aplinkybių, beveik 90% bulvių, uogų bei vaisių būdavo užauginama būtent vasarnamių sklypuose.",
+  "photo12": { "src": "/images/photo12.jpg", "alt": "photo12", "caption": "Estijos Architektūros muziejaus archyvo nuotr." },
+
+  "state3_name": "Lenkija",
+  "text11": "Pirmieji Lenkijos kolektyviniai sodai (ogrody działkowe) įkurti dar 1897 metais Grudziondze - tuometinėje Vokietijos imperijoje. Tarpukariu sodininkavimas buvo toks populiarus, kad 1927m. įkurta asociacija ZOOD vos po 8 metų įsteigė skyrių net ir Vilniuje. Sovietmečiu sodai tapo galimybe gyventojams, ypatingai moterims, apsirūpinti maistu.",
+  "photo13": { "src": "/images/photo13.jpg", "alt": "photo13", "caption": "Stanislaw Bielski/REPORTER / East News nuotr." },
+
+  "state4_name": "Vokietija",
+  "text12": "Rytų Vokietijoje XIXa. kilęs mažųjų sodų (Kleingarten) judėjimas - vienas seniausių Centrinėje Europoje. Kuriami kaip priemonė spręsti skurdo ir nusikalstamumo klausimus tarp pramonės darbininkų, sodų atsiradimas buvo glaudžiai susijęs su industrializacija. Sodai taip pat suteikė jiems galimybę patiems užsiauginti produktų ir sveikiau praleisti laisvalaikį.",
+  "photo14": { "src": "/images/photo14.jpg", "alt": "photo14", "caption": "Leipzig Lieben nuotr." }
+}
