@@ -4,17 +4,19 @@
 
   "nav_header": "Planas",
   "nav_labels": {
-    "hero":         "Pradžia",
-    "first-visual": "Vaizdas",
-    "origin":       "Ištakos",
-    "transition":   "Kaita",
-    "maps":         "Vieta",
-    "escapism":     "Pabėgimas",
-    "diy":          "Kūryba",
-    "social":       "Gyvenimas",
-    "symbolism":    "Simboliai",
-    "svetur":       "Svetur",
-    "final":        "Pabaiga"
+    "hero":               "Pradžia",
+    "first-visual":       "Lietuviškas sodas",
+    "origin":             "Ištakos",
+    "transition":         "Kaita",
+    "maps":               "Plėtra",
+    "sakytine-istorija":  "Sakytinė istorija",
+    "diy":                "Sodų statymas",
+    "social":             "Gyvenimas",
+    "symbolism":          "Simbolizmas",
+    "escapism":           "Požiūris į sodą",
+    "svetur":             "Svetur",
+    "ka-pasakoja-sodai":  "Ką pasakoja sodai?",
+    "final":              "Pabaiga"
   },
 
   "hero_subtitle": "Sovietinių visuomenių antropologija",
@@ -58,10 +60,13 @@
   },
   "map_disclaimer": "Žemėlapiuose gali būti mažų neatitikimų, jie skirti parodyti tendencijas",
 
+  "sakytine_heading": "Sakytinės istorijos",
+  "text20": "text20 text20 text20 text20 text20 text20 text20 text20",
+
   "escapism_label":    "Pabėgimas iš sovietinio gyvenimo",
-  "text3": "“Galėjai jaustis lyg tu vienas, darai ką nori” - Marija",
-  "contradiction_label": "Kasdienybės tęsinys",
-  "text4": "text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4 text4.",
+  "text3": "“Galėjai jaustis lyg tu vienas, darai ką nori” - Pašnekovė",
+  "contradiction_label": "Kasdienybės tęsinys?",
+  "text4": "“Tėtis bandydavo vaizduoti kad čia statoma relaksacijos bazė… bet relaksacijos čia nelabai būdavo. Atleki ten tai sarašiukas problemų, ten vamzdis trūko ten laidas nekontaktuoja…” - Valdas.",
   "escapism_footer": "Pabėgimo erdvė — sodų bendrija",
 
   "text5": "“Supratimo apie statybos darbus absoliučiai, žalio supratimo neturėjau, bet buvo noras (...) čia mano, svarbiausia” - Audrius",
@@ -72,15 +77,14 @@
   "photo4": { "src": "/images/photo4.jpg", "alt": "photo4", "caption": "Nuotrauka iš serijos „MAGIC\" ciklo „LSD – Lietuvos sodų draugija\" | I. Maldžiūno nuotr." },
   "diy_section_label": "Sodų statybos",
 
-  "quote2": "“Mūsų sode, kadangi negalėjai atšvesti kokių nors žiemos švenčių (...) bet jau vasarą jonines buvo mūsų didžiausia šventė (...) Bute tu to negali padaryt, tavo butas mažas. Tu negali prikviest šitiek žmonių į savo butą šventei.” - Marija",
+  "quote2": "“Mūsų sode, kadangi negalėjai atšvesti kokių nors žiemos švenčių (...) bet jau vasarą jonines buvo mūsų didžiausia šventė (...) Bute tu to negali padaryt, tavo butas mažas. Tu negali prikviest šitiek žmonių į savo butą šventei.” - Pašnekovė",
   "quote3": ["“Mieste su kaimynais faktiškai nebendravom…vienu žodžiu persimeti susitikęs…o sode ir pasišneki, ir užeidavo vieni pas kitus…” - Audrius",
-  "“Neatsimenu ne vieno blogo kaimyno. Visi kaimynai kažkaip buvo geranoriški… O va darbe, darbe buvo konkurencija žvėriška!” - Marija"
+  "“Neatsimenu ne vieno blogo kaimyno. Visi kaimynai kažkaip buvo geranoriški… O va darbe, darbe buvo konkurencija žvėriška!” - Pašnekovė"
   ],
-  "quote4": "quote unfinished",
-  "quote5": [ "“Tėtis bandydavo vaizduoti kad čia statoma relaksacijos bazė… bet relaksacijos čia nelabai būdavo. Atleki ten tai sarašiukas problemų, ten vamzdis trūko ten laidas nekontaktuoja…” - Valdas",
+  "quote5": [ "“turėjome tokį... Nuo statybų  buvo likę juodo, 40mm skersmens vamzdžio. Gan ilgas gabalas. Tai sugalvojom kad reiktų pabandyti padaryti karštą vandenį.. apdengiu polietilenu ir I dušą. Tai saulėtą dieną veikė stebėtinai gerai. Jei pavėlavai ateiti tai gali ir nusiplikyti” - Valdas.",
   "“Aš ir mieste jaučiausi laisvai ir sode laisvai (...) Su noru važiuodavai, ir žiemą, galų gale (...) nuovažiuoji, padarai sienos porą metrų, ar lubų, ir jau smagu - radai pasitenkinimą.” - Audrius" 
   ],
-  "quote6": "“Tai buvo kažkas tai tokio savo. Tu va turėsi kažką tai. Galėsi įgyvendinti savo svajonę!” - Marija",
+  "quote6": "“Tai buvo kažkas tai tokio savo. Tu va turėsi kažką tai. Galėsi įgyvendinti savo svajonę!” - Pašnekovė",
   "social_sections": [
     { "title": "Sodų šventės",   "quoteId": "quote2", "layout": "fullquote"  },
     { "title": "Kaimynai",       "quoteId": "quote3", "layout": "centered"   },
@@ -96,20 +100,10 @@
   "photo8":  { "src": null, "alt": "photo8",  "caption": null },
   "photo9":  { "src": null, "alt": "photo9",  "caption": null },
   "photo10": { "src": null, "alt": "photo10", "caption": null },
-  "quote7":  "quote7 quote7 quote7 quote7 quote7 quote7",
-  "quote8":  "quote8 quote8 quote8 quote8 quote8 quote8",
-  "quote9":  "quote9 quote9 quote9 quote9 quote9 quote9",
-  "quote10": "quote10 quote10 quote10 quote10 quote10",
-  "quote11": "quote11 quote11 quote11 quote11 quote11",
-  "quote12": "quote12 quote12 quote12 quote12 quote12",
-  "symbolism_items": [
-    { "photoId": "photo5",  "quoteId": "quote7",  "gradient": "from-stone-100 via-[#dde8d5] to-stone-200" },
-    { "photoId": "photo6",  "quoteId": "quote8",  "gradient": "from-[#e2eadc] via-stone-100 to-[#d4dece]" },
-    { "photoId": "photo7",  "quoteId": "quote9",  "gradient": "from-stone-200 via-[#cdd8c5] to-stone-100" },
-    { "photoId": "photo8",  "quoteId": "quote10", "gradient": "from-[#e8e0d4] via-stone-100 to-stone-200" },
-    { "photoId": "photo9",  "quoteId": "quote11", "gradient": "from-stone-100 via-[#dae0d4] to-stone-200" },
-    { "photoId": "photo10", "quoteId": "quote12", "gradient": "from-[#e4ddd4] via-stone-200 to-stone-100" }
-  ],
+  "quote7":  "“(...) eini pas kitus žiūrėti kaip kiti stato, ką daro, mokaisi iš kitų (...) rezultato laukimas. O kai pastatyta jau, malonumas labai.” - Audrius",
+  "quote8":  "“Man simbolizuoja Šermukšnis, aš... pasisodinau pirmiausia šermukšnį tai man primena kaimą nes pas senelius ribos buvo... pasodintas šermukšnis ir už šermukšnio.. kaimyno eina.. žemė.” - Valdas",
+  "quote9":  "“Gal tokia konfliktiška detalė.. (juokiasi) mama mėgdavo labai anksti keltis, už ką ir gaudavo kartais pastabų iš kaimynių. Ar sekmadienis ar pirmadienis žiūrėk 5-a ryto... nors ji jau stengdavosi bet jau kad sužvanga kibirai... kastuvas į kažką atsitrenkia... Gal toks va dalykas.” - Jonas",
+  "quote10": "“Sode tu turėjai galimybę dirbti darže, gali tvarkytis vienas namie, nėra šalia arti žmonių. Galėjai namą apsisodinti, taip, kaip tu norėjai.” - Pašnekovė",
 
   "final_quote":  "Kai kuriems kolektyviniai sodai buvo galimybė pabėgti nuo juos veikiančios sistemos, o kai kuriems - tik būdas praskaidrinti kasdienybę. Tiek vieniems, tiek kitiems, kolektyviniai sodai buvo, galų gale, maloni vieta, leidžianti bent trumpam pabūti tiesiog savimi",
   "final_footer": "Sodų Bendrijos",
@@ -121,11 +115,14 @@
   "symbolism_count_suffix":   "objektai",
   "symbolism_heading": "Sodų simboliai",
   "symbolism_blocks": [
-    { "title": "Tvora",    "quoteId": "quote7",  "description": "description placeholder" },
-    { "title": "Namelis",  "quoteId": "quote8",  "description": "description placeholder" },
-    { "title": "Daržas",   "quoteId": "quote9",  "description": "description placeholder" },
-    { "title": "Šventė",   "quoteId": "quote10", "description": "description placeholder" }
+    { "title": "Statybos",             "quoteId": "quote7",  "description": "" },
+    { "title": "Šermukšnis",           "quoteId": "quote8",  "description": "" },
+    { "title": "Ankstus mamos darbas", "quoteId": "quote9",  "description": "" },
+    { "title": "Laisvė",                     "quoteId": "quote10", "description": "" }
   ],
+
+  "ka_pasakoja_heading": "Ką pasakoja sodai?",
+  "text21": "text21 text21 text21 text21 text21 text21 text21 text21",
 
   "svetur_title":    "Sodų tradicijos svetur",
   "svetur_subtitle": "Sodo kaip pabėgimo ir autonomijos forma neapsiribojo vien Lietuva — panašios struktūros kilo visame sovietiniame bloke ir toliau",
@@ -144,5 +141,8 @@
 
   "state4_name": "Vokietija",
   "text12": "Rytų Vokietijoje XIXa. kilęs mažųjų sodų (Kleingarten) judėjimas - vienas seniausių Centrinėje Europoje. Kuriami kaip priemonė spręsti skurdo ir nusikalstamumo klausimus tarp pramonės darbininkų, sodų atsiradimas buvo glaudžiai susijęs su industrializacija. Sodai taip pat suteikė jiems galimybę patiems užsiauginti produktų ir sveikiau praleisti laisvalaikį.",
-  "photo14": { "src": "/images/photo14.jpg", "alt": "photo14", "caption": "Leipzig Lieben nuotr." }
+  "photo14": { "src": "/images/photo14.jpg", "alt": "photo14", "caption": "Leipzig Lieben nuotr." },
+
+  "photo31": { "src": "/images/photo31.jpg", "alt": "prieš",  "caption": null },
+  "photo32": { "src": "/images/photo32.jpg", "alt": "po",     "caption": null }
 }

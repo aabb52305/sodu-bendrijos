@@ -48,16 +48,18 @@ export default function SymbolismSection({ id }: { id: string }) {
                 </span>
 
                 <div className="relative pt-10">
-                  <motion.h3
-                    initial={{ opacity: 0, y: 6 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.6, delay: 0.1 + (i % 2) * 0.18, ease: EASE }}
-                    viewport={{ once: true }}
-                    className="font-serif font-normal text-[#2c302a]/70 leading-tight mb-5"
-                    style={{ fontSize: "clamp(1.7rem, 3vw, 2.5rem)" }}
-                  >
-                    {block.title}
-                  </motion.h3>
+                  {block.title && (
+                    <motion.h3
+                      initial={{ opacity: 0, y: 6 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 1.6, delay: 0.1 + (i % 2) * 0.18, ease: EASE }}
+                      viewport={{ once: true }}
+                      className="font-serif font-normal text-[#2c302a]/70 leading-tight mb-5"
+                      style={{ fontSize: "clamp(1.7rem, 3vw, 2.5rem)" }}
+                    >
+                      {block.title}
+                    </motion.h3>
+                  )}
                   <div className="w-10 h-px bg-[#cdd8c5]" />
 
                   <div className="mt-9 space-y-4">

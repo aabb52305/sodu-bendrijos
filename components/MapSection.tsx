@@ -60,7 +60,7 @@ export default function MapSection({ id }: { id: string }) {
                   </div>
                 )}
               </div>
-              <p className="mt-2.5 shrink-0 font-sans text-[#96a48e] text-[9px] tracking-[0.3em] uppercase">
+              <p className="mt-2.5 shrink-0 font-sans text-[#96a48e] text-[10px] tracking-[0.3em] uppercase">
                 {map.caption}
               </p>
             </motion.div>
@@ -72,7 +72,7 @@ export default function MapSection({ id }: { id: string }) {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.4, delay: 0.6 }}
           viewport={{ once: true }}
-          className="mt-4 shrink-0 font-sans text-[#96a48e]/55 text-[7px] tracking-[0.25em]"
+          className="mt-4 shrink-0 font-sans text-[#96a48e]/55 text-[8px] tracking-[0.25em]"
         >
           {disclaimer}
         </motion.p>

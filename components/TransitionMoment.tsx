@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
-import { resolveText } from "@/lib/contentResolver";
+import { resolveText, resolvePhoto } from "@/lib/contentResolver";
 
 const quote             = resolveText("quote1");
 const labelBefore       = resolveText("transition_label_before");
@@ -10,6 +11,8 @@ const labelAfter        = resolveText("transition_label_after");
 const footBefore        = resolveText("transition_foot_before");
 const footDrag          = resolveText("transition_foot_drag");
 const footAfter         = resolveText("transition_foot_after");
+const photoBefore       = resolvePhoto("photo31");
+const photoAfter        = resolvePhoto("photo32");
 
 export default function TransitionMoment({ id }: { id: string }) {
   const sectionRef = useRef<HTMLElement>(null);
@@ -52,7 +55,7 @@ export default function TransitionMoment({ id }: { id: string }) {
         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
         viewport={{ once: true, margin: "-40px" }}
-        className="max-w-xl mx-auto text-center px-8 mb-12"
+        className="max-w-xl mx-auto text-center px-8 mb-20"
       >
         <span className="font-serif text-[#b89460]/40 text-5xl leading-none block -mb-2">&ldquo;</span>
         <p className="font-serif italic text-[#5e6858] text-lg md:text-xl leading-relaxed">
@@ -76,46 +79,57 @@ export default function TransitionMoment({ id }: { id: string }) {
           onMouseMove={(e) => isDragging && move(e.clientX)}
           onTouchMove={(e) => move(e.touches[0].clientX)}
         >
-          {/* AFTER — washed stone/urban */}
-          <div className="absolute inset-0 bg-gradient-to-br from-stone-200 via-stone-300 to-stone-400">
-            <div
-              className="absolute inset-0 opacity-[0.12]"
-              style={{
-                backgroundImage:
-                  "repeating-linear-gradient(0deg, #aaa 0, #aaa 1px, transparent 0, transparent 36px), repeating-linear-gradient(90deg, #aaa 0, #aaa 1px, transparent 0, transparent 36px)",
-              }}
-            />
-            {[
-              { top: "20%", left: "10%", w: "14%", h: "22%" },
-              { top: "18%", left: "30%", w: "18%", h: "28%" },
-              { top: "22%", left: "54%", w: "16%", h: "24%" },
-              { top: "55%", left: "8%",  w: "20%", h: "18%" },
-              { top: "50%", left: "38%", w: "24%", h: "26%" },
-              { top: "52%", left: "68%", w: "18%", h: "22%" },
-            ].map((s, i) => (
-              <div
-                key={i}
-                className="absolute bg-stone-400/20 border border-stone-400/15"
-                style={{ top: s.top, left: s.left, width: s.w, height: s.h }}
+          {/* AFTER — po */}
+          <div className="absolute inset-0">
+            {photoAfter.src ? (
+              <Image
+                src={photoAfter.src}
+                alt={photoAfter.alt}
+                fill
+                sizes="(max-width: 1024px) 100vw, 80vw"
+                className="object-cover object-center"
+                priority
               />
-            ))}
-            <span className="absolute bottom-3 right-3 font-sans text-[#96a48e]/60 text-[8px] tracking-widest uppercase">
+            ) : (
+              <div className="absolute inset-0 bg-gradient-to-br from-stone-200 via-stone-300 to-stone-400">
+                <div
+                  className="absolute inset-0 opacity-[0.12]"
+                  style={{
+                    backgroundImage:
+                      "repeating-linear-gradient(0deg, #aaa 0, #aaa 1px, transparent 0, transparent 36px), repeating-linear-gradient(90deg, #aaa 0, #aaa 1px, transparent 0, transparent 36px)",
+                  }}
+                />
+              </div>
+            )}
+            <span className="absolute bottom-3 right-3 font-sans text-[#96a48e]/60 text-[8px] tracking-widest uppercase z-10">
               {labelAfter}
             </span>
           </div>
 
-          {/* BEFORE — washed green/field */}
+          {/* BEFORE — prieš */}
           <div
-            className="absolute inset-0 bg-gradient-to-br from-[#d4e8c8] via-[#c8ddb8] to-stone-200 overflow-hidden"
+            className="absolute inset-0 overflow-hidden"
             style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
           >
-            <div
-              className="absolute inset-0 opacity-[0.10]"
-              style={{
-                backgroundImage: "repeating-linear-gradient(30deg, #6a8 0, #6a8 1px, transparent 0, transparent 22px)",
-              }}
-            />
-            <span className="absolute bottom-3 left-3 font-sans text-[#6b8c60]/60 text-[8px] tracking-widest uppercase">
+            {photoBefore.src ? (
+              <Image
+                src={photoBefore.src}
+                alt={photoBefore.alt}
+                fill
+                sizes="(max-width: 1024px) 100vw, 80vw"
+                className="object-cover object-center"
+              />
+            ) : (
+              <div className="absolute inset-0 bg-gradient-to-br from-[#d4e8c8] via-[#c8ddb8] to-stone-200">
+                <div
+                  className="absolute inset-0 opacity-[0.10]"
+                  style={{
+                    backgroundImage: "repeating-linear-gradient(30deg, #6a8 0, #6a8 1px, transparent 0, transparent 22px)",
+                  }}
+                />
+              </div>
+            )}
+            <span className="absolute bottom-3 left-3 font-sans text-[#6b8c60]/60 text-[8px] tracking-widest uppercase z-10">
               {labelBefore}
             </span>
           </div>
