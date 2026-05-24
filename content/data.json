@@ -61,8 +61,9 @@
   "map_disclaimer": "Žemėlapiuose gali būti mažų neatitikimų, jie skirti parodyti tendencijas",
 
   "sakytine_heading": "Sakytinės istorijos",
-  "text20": "text20 text20 text20 text20 text20 text20 text20 text20",
-
+  "text20": ["Šis projektas remiasi sakytinės istorijos metodu - interviu pokalbiai su sodų bendrijų gyventojais, esamais ir buvusiais. Juose fiksuoti asmeniniai prisiminimai apie jų sodo atsiradimą, bendruomenę, laisvės pojūtį.", 
+  "Ši medžiaga nėra objektyvi ar pilna istorija - tai pasakojimai, atskleidžiantys individualias patirtis sovietinio gyvenimo kontekste. Likusi medžiaga veikia kaip papildomas kontekstas, kuriuo siekiama geriau įprasminti kalbintų pašnekovų pasakojimus."
+  ],
   "escapism_label":    "Pabėgimas iš sovietinio gyvenimo",
   "text3": "“Galėjai jaustis lyg tu vienas, darai ką nori” - Pašnekovė",
   "contradiction_label": "Kasdienybės tęsinys?",
@@ -118,12 +119,11 @@
     { "title": "Statybos",             "quoteId": "quote7",  "description": "" },
     { "title": "Šermukšnis",           "quoteId": "quote8",  "description": "" },
     { "title": "Ankstus mamos darbas", "quoteId": "quote9",  "description": "" },
-    { "title": "Laisvė",                     "quoteId": "quote10", "description": "" }
+    { "title": "Privatumas",           "quoteId": "quote10", "description": "" }
   ],
 
   "ka_pasakoja_heading": "Ką pasakoja sodai?",
-  "text21": "text21 text21 text21 text21 text21 text21 text21 text21",
-
+  "text21": "forgor",
   "svetur_title":    "Sodų tradicijos svetur",
   "svetur_subtitle": "Sodo kaip pabėgimo ir autonomijos forma neapsiribojo vien Lietuva — panašios struktūros kilo visame sovietiniame bloke ir toliau",
 

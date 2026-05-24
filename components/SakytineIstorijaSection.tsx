@@ -4,14 +4,14 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { resolveText } from "@/lib/contentResolver";
 
-const heading = resolveText("sakytine_heading");
-const text20  = resolveText("text20");
-
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 export default function SakytineIstorijaSection({ id }: { id: string }) {
   const ref    = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
+
+  const heading = resolveText("sakytine_heading");
+  const body    = resolveText("text20");
 
   return (
     <section
@@ -19,42 +19,36 @@ export default function SakytineIstorijaSection({ id }: { id: string }) {
       ref={ref}
       className="relative h-screen flex flex-col justify-center overflow-hidden bg-[#f2f5ee]"
     >
-      {/* Subtle grid texture matching DIY section */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(0deg, #9ab08e 0, #9ab08e 1px, transparent 0, transparent 32px)," +
-            "repeating-linear-gradient(90deg, #9ab08e 0, #9ab08e 1px, transparent 0, transparent 32px)",
-          opacity: 0.025,
-        }}
-      />
+      {/* Soft vertical accent — archival / transitional feel */}
+      <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#9ab08e]/20 to-transparent pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-8 lg:px-16 w-full">
+      <div className="max-w-7xl mx-auto px-8 lg:px-20 w-full">
+
         <motion.div
-          initial={{ opacity: 0, y: 14, filter: "blur(4px)" }}
+          initial={{ opacity: 0, y: 16, filter: "blur(5px)" }}
           animate={inView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
-          transition={{ duration: 1.8, ease: EASE }}
-          className="mb-10"
+          transition={{ duration: 2, ease: EASE }}
+          className="mb-14"
         >
           <h2
             className="font-serif font-normal text-[#2c302a]/75 leading-tight"
-            style={{ fontSize: "clamp(1.8rem, 3.5vw, 3rem)" }}
+            style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
           >
             {heading}
           </h2>
-          <div className="w-10 h-px bg-[#9ab08e]/40 mt-4" />
+          <div className="w-12 h-px bg-[#9ab08e]/35 mt-5" />
         </motion.div>
 
         <motion.p
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 1.6, delay: 0.4, ease: EASE }}
-          className="font-serif italic text-[#5e6858]/65 leading-relaxed max-w-2xl"
-          style={{ fontSize: "clamp(1rem, 1.6vw, 1.25rem)" }}
+          transition={{ duration: 1.8, delay: 0.5, ease: EASE }}
+          className="font-serif italic text-[#5e6858]/65 leading-loose max-w-3xl"
+          style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
         >
-          {text20}
+          {body}
         </motion.p>
+
       </div>
     </section>
   );
