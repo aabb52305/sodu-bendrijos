@@ -153,6 +153,17 @@ export default function TransitionMoment({ id }: { id: string }) {
           <span className="font-sans text-[#b8c8b0] text-[8px] tracking-[0.3em] uppercase">{footDrag}</span>
           <span className="font-sans text-[#96a48e] text-[8px] tracking-[0.4em] uppercase">{footAfter}</span>
         </div>
+
+        {(photoBefore.caption || photoAfter.caption) && (
+          <div className="flex justify-between mt-2 px-1 gap-8">
+            <p className="font-sans text-[#96a48e] text-[9px] tracking-[0.12em] leading-relaxed max-w-[46%]">
+              {photoBefore.caption}
+            </p>
+            <p className="font-sans text-[#96a48e] text-[9px] tracking-[0.12em] leading-relaxed max-w-[46%] text-right">
+              {photoAfter.caption}
+            </p>
+          </div>
+        )}
       </motion.div>
     </section>
   );
