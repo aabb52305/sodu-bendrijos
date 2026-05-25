@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { resolveQuoteLines, resolveSocialSections, type SocialSectionContent } from "@/lib/contentResolver";
+import { resolveQuoteLines, resolveSocialSections, resolvePhoto, type SocialSectionContent, type PhotoContent } from "@/lib/contentResolver";
 
 type Layout = SocialSectionContent["layout"];
 
@@ -9,12 +10,16 @@ interface SubData {
   title: string;
   quoteLines: string[];
   layout: Layout;
+  photo?: PhotoContent;
 }
+
+const darbasPhoto = resolvePhoto("photo20");
 
 const SUBSECTIONS: SubData[] = resolveSocialSections().map((s) => ({
   title:      s.title,
   quoteLines: resolveQuoteLines(s.quoteId),
   layout:     s.layout,
+  photo:      s.title === "Darbas" ? darbasPhoto : undefined,
 }));
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
@@ -166,36 +171,68 @@ function SubRightLine({ data }: { data: SubData }) {
       viewport={{ once: true, margin: "-60px" }}
       className="min-h-[75vh] flex items-center py-28"
     >
-      <div className="max-w-7xl mx-auto px-8 lg:px-16 lg:pr-56 w-full text-right">
-        <motion.h3
-          initial={{ opacity: 0, y: 10, filter: "blur(3px)" }}
-          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ duration: 1.8, ease: EASE }}
+      <div className="max-w-7xl mx-auto px-8 lg:px-16 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        {/* Left — photo */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, delay: 0.15, ease: EASE }}
           viewport={{ once: true, margin: "-60px" }}
-          className="font-serif font-normal text-[#2c302a]/80 leading-tight mt-3 mb-8"
-          style={{ fontSize: "clamp(2.4rem, 5vw, 4.5rem)" }}
         >
-          {data.title}
-        </motion.h3>
-        <div className={data.quoteLines.length > 1 ? "space-y-12" : undefined}>
-          {data.quoteLines.map((line, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: 14 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 2, delay: 0.2 + i * 0.55, ease: EASE }}
-              viewport={{ once: true }}
-            >
-              <div className="w-20 h-px bg-[#cdd8c5] ml-auto mb-8" />
-              <p
-                className="font-serif italic text-[#5e6858]/75 leading-relaxed max-w-2xl ml-auto"
-                style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.5rem)" }}
+          {data.photo?.src && (
+            <>
+              <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
+                <Image
+                  src={data.photo.src}
+                  alt={data.photo.alt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              {data.photo.caption && (
+                <p className="font-sans text-[#96a48e] text-[9px] tracking-[0.2em] mt-2.5 leading-relaxed">
+                  {data.photo.caption}
+                </p>
+              )}
+            </>
+          )}
+        </motion.div>
+
+        {/* Right — title + quotes */}
+        <div className="text-right">
+          <motion.h3
+            initial={{ opacity: 0, y: 10, filter: "blur(3px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 1.8, ease: EASE }}
+            viewport={{ once: true, margin: "-60px" }}
+            className="font-serif font-normal text-[#2c302a]/80 leading-tight mt-3 mb-8"
+            style={{ fontSize: "clamp(2.4rem, 5vw, 4.5rem)" }}
+          >
+            {data.title}
+          </motion.h3>
+          <div className={data.quoteLines.length > 1 ? "space-y-12" : undefined}>
+            {data.quoteLines.map((line, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: 14 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 2, delay: 0.2 + i * 0.55, ease: EASE }}
+                viewport={{ once: true }}
               >
-                {line}
-              </p>
-            </motion.div>
-          ))}
+                <div className="w-20 h-px bg-[#cdd8c5] ml-auto mb-8" />
+                <p
+                  className="font-serif italic text-[#5e6858]/75 leading-relaxed max-w-2xl ml-auto"
+                  style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.5rem)" }}
+                >
+                  {line}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
+
       </div>
     </motion.div>
   );

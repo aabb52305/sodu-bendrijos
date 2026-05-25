@@ -144,10 +144,10 @@ export default function DIYSection({ id }: { id: string }) {
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 1.6, delay: 0.5, ease: EASE }}
             >
-              <div className="w-5 h-px bg-[#b89460]/35 mb-5" />
+              <div className="w-5 h-px bg-[#b89460]/50 mb-5" />
               <p
-                className="font-serif italic text-[#5e6858]/75 leading-relaxed"
-                style={{ fontSize: "clamp(0.9rem, 1.3vw, 1.05rem)" }}
+                className="font-serif italic text-[#5e6858]/85 leading-relaxed"
+                style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.3rem)" }}
               >
                 {text5}
               </p>
@@ -202,12 +202,12 @@ export default function DIYSection({ id }: { id: string }) {
               className="text-right"
             >
               <p
-                className="font-serif italic text-[#5e6858]/75 leading-relaxed"
-                style={{ fontSize: "clamp(0.9rem, 1.3vw, 1.05rem)" }}
+                className="font-serif italic text-[#5e6858]/85 leading-relaxed"
+                style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.3rem)" }}
               >
                 {text6}
               </p>
-              <div className="w-5 h-px bg-[#b89460]/35 mt-4 ml-auto" />
+              <div className="w-5 h-px bg-[#b89460]/50 mt-4 ml-auto" />
             </motion.div>
 
           </div>

@@ -24,7 +24,7 @@
   "hero_line2": [" ir", " žmonių", " autonomija"],
   "hero_line3": [" sovietmečio", " soduose"],
 
-  "photo1": { "src": "/images/photo1.jpg", "alt": "photo1", "caption": null },
+  "photo1": { "src": "/images/photo16.jpg", "alt": "Sodų bendrija", "caption": "Matheus Baumann nuotr." },
 
   "origin_heading":        "Sodų Bendrijų",
   "origin_heading_accent": "atsiradimo priežastys",
@@ -121,9 +121,14 @@
     { "title": "Privatumas",           "quoteId": "quote10", "description": "" }
   ],
 
+  "photo17": { "src": "/images/photo17.jpg", "alt": "Sodų bendrija", "caption": "Matheus Baumann nuotr." },
+  "photo18": { "src": "/images/photo18.jpg", "alt": "Sodų bendrija", "caption": "Matheus Baumann nuotr." },
+  "photo20": { "src": "/images/photo20.jpg", "alt": "Sodų bendrija", "caption": "Matheus Baumann nuotr." },
+
   "ka_pasakoja_heading": "Ką pasakoja sodai?",
-  "text21": "Ši analizė mums rodo XYZ",
-  "text23": "text23 text23 text23 text23 text23 text23 text23 text23",
+  "text21": "Šiuo tyrimu suponuota hipotezė, jog sodai sovietmečiu buvo laisvės spindulys pilkame pasaulyje iš principo nebuvo įrodyta. Pašnekovų pasakojimuose išryškėja tai, jog nors sodų bendrijos nebuvo atsiribojimas nuo sovietinės sistemos, juose atsirasdavo daugiau vietos neformaliems santykiams, savarankiškumui bei saviraiškai.",
+  "text23": "Žvelgdami atgal, pašnekovai prisimena sodus daugiau teigiamai, pasidžiaugia pirmomis statybomis, šventėmis su draugais. Prisiminimuose sodai neretai atrodo ramesni ir draugiškesni nei jie tikrovėje galėjo būti, tačiau būtent toks atsiminimas taip pat yra svarbi pasakojimo dalis.",
+  "text24": "Teisinga teigti, jog kolektyviniai sodai - vienas iš sėkmingesnių sovietmečio projektų. Juo tiek miestiečiams pavykdavo užsiauginti maisto, tiek sukurti savitus namus - tai pašnekovas prisimena su dideliu malonumu. Galbūt todėl sodai daugelio prisiminimuose išlieka ne tik kaip vieta, bet ir kaip savitas santykis su laisve, darbu ir kasdienybe.",
   "svetur_title":    "Sodų tradicijos svetur",
   "svetur_subtitle": "Sodo kaip pabėgimo ir autonomijos forma neapsiribojo vien Lietuva — panašios struktūros kilo visame sovietiniame bloke ir toliau",
 

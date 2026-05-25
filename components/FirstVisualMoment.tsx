@@ -47,6 +47,12 @@ export default function FirstVisualMoment({ id }: { id: string }) {
           }}
         />
 
+        {photo.caption && (
+          <p className="absolute bottom-6 left-8 z-10 font-sans text-[#5e6858]/55 text-[9px] tracking-[0.2em]">
+            {photo.caption}
+          </p>
+        )}
+
       </motion.div>
     </section>
   );

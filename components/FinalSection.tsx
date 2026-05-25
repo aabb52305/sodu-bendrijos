@@ -68,15 +68,9 @@ export default function FinalSection({ id }: { id: string }) {
             ))}
           </div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 2.5, delay: 3.6 }}
-            viewport={{ once: true }}
-            className="font-sans text-[#96a48e]/28 text-[7px] tracking-[0.22em] mt-14"
-          >
+          <p className="font-sans text-[#7a8874] text-[11px] tracking-[0.1em] mt-14">
             Matas Cirusis, Aleksandras Mikšėnas, Matheus Baumann — VU TSPMI III kursas
-          </motion.p>
+          </p>
         </motion.div>
       </div>
     </section>

@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { resolveText } from "@/lib/contentResolver";
+import { resolveText, resolvePhoto } from "@/lib/contentResolver";
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -9,11 +10,12 @@ export default function KaPasakojaSodaiSection({ id }: { id: string }) {
   const heading = resolveText("ka_pasakoja_heading");
   const body    = resolveText("text21");
   const body2   = resolveText("text23");
+  const body3   = resolveText("text24");
+  const photo17 = resolvePhoto("photo17");
 
   return (
     <section id={id} className="relative min-h-[80vh] flex items-center py-32 bg-[#f2f5ee]">
 
-      {/* Soft horizontal accent at top */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#cdd8c5]/60 to-transparent pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-8 lg:px-20 w-full">
@@ -23,7 +25,7 @@ export default function KaPasakojaSodaiSection({ id }: { id: string }) {
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 2, ease: EASE }}
           viewport={{ once: true, margin: "-40px" }}
-          className="mb-20"
+          className="mb-16"
         >
           <h2
             className="font-serif font-normal text-[#2c302a]/75 leading-tight"
@@ -34,27 +36,69 @@ export default function KaPasakojaSodaiSection({ id }: { id: string }) {
           <div className="w-12 h-px bg-[#9ab08e]/35 mt-5" />
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.8, delay: 0.4, ease: EASE }}
-          viewport={{ once: true, margin: "-40px" }}
-          className="font-serif text-[#5e6858]/80 leading-relaxed max-w-3xl"
-          style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
-        >
-          {body}
-        </motion.p>
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.8fr] gap-14 lg:gap-20 items-start">
 
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.8, delay: 0.65, ease: EASE }}
-          viewport={{ once: true, margin: "-40px" }}
-          className="font-serif text-[#5e6858]/80 leading-relaxed max-w-3xl mt-10"
-          style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
-        >
-          {body2}
-        </motion.p>
+          {/* Text column */}
+          <div>
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.8, delay: 0.4, ease: EASE }}
+              viewport={{ once: true, margin: "-40px" }}
+              className="font-serif text-[#5e6858]/80 leading-relaxed"
+              style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
+            >
+              {body}
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.8, delay: 0.65, ease: EASE }}
+              viewport={{ once: true, margin: "-40px" }}
+              className="font-serif text-[#5e6858]/80 leading-relaxed mt-10"
+              style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
+            >
+              {body2}
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.8, delay: 0.9, ease: EASE }}
+              viewport={{ once: true, margin: "-40px" }}
+              className="font-serif text-[#5e6858]/80 leading-relaxed mt-10"
+              style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
+            >
+              {body3}
+            </motion.p>
+          </div>
+
+          {/* Image column */}
+          {photo17.src && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2, delay: 0.3, ease: EASE }}
+              viewport={{ once: true, margin: "-40px" }}
+            >
+              <div className="relative overflow-hidden" style={{ aspectRatio: "4/5" }}>
+                <Image
+                  src={photo17.src}
+                  alt={photo17.alt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 38vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              {photo17.caption && (
+                <p className="font-sans text-[#96a48e] text-[9px] tracking-[0.2em] mt-2.5 leading-relaxed">
+                  {photo17.caption}
+                </p>
+              )}
+            </motion.div>
+          )}
+        </div>
 
       </div>
     </section>

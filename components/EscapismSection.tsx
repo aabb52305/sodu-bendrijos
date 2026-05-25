@@ -1,13 +1,15 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { resolveText } from "@/lib/contentResolver";
+import { resolveText, resolvePhoto } from "@/lib/contentResolver";
 
 const escapismLabel      = resolveText("escapism_label");
 const text3              = resolveText("text3");
 const contradictionLabel = resolveText("contradiction_label");
 const text4              = resolveText("text4");
 const footerLabel        = resolveText("escapism_footer");
+const photo18            = resolvePhoto("photo18");
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -82,12 +84,37 @@ export default function EscapismSection({ id }: { id: string }) {
 
         </div>
 
+        {photo18.src && (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: 0.4, ease: EASE }}
+            viewport={{ once: true }}
+            className="mt-12"
+          >
+            <div className="relative overflow-hidden" style={{ height: "clamp(200px, 36vh, 340px)" }}>
+              <Image
+                src={photo18.src}
+                alt={photo18.alt}
+                fill
+                sizes="(max-width: 1280px) 100vw, 1280px"
+                className="object-cover object-center"
+              />
+            </div>
+            {photo18.caption && (
+              <p className="font-sans text-[#96a48e] text-[9px] tracking-[0.2em] mt-2.5 leading-relaxed">
+                {photo18.caption}
+              </p>
+            )}
+          </motion.div>
+        )}
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.4, delay: 0.6 }}
           viewport={{ once: true }}
-          className="mt-10 flex items-center gap-4"
+          className="mt-8 flex items-center gap-4"
         >
           <div className="h-px w-10 bg-[#cdd8c5]" />
           <span className="font-sans text-[#96a48e] text-[8px] tracking-[0.4em] uppercase">{footerLabel}</span>
