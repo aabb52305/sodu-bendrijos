@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import { resolveText, resolvePhoto } from "@/lib/contentResolver";
 
 const quote             = resolveText("quote1");
@@ -37,12 +37,12 @@ export default function TransitionMoment({ id }: { id: string }) {
     setTimeout(() => requestAnimationFrame(tick), 700);
   }, [isInView, autoPlayed]);
 
-  const move = (clientX: number) => {
+  const move = useCallback((clientX: number) => {
     const el = sliderRef.current;
     if (!el) return;
     const r = el.getBoundingClientRect();
     setSliderPos(Math.max(3, Math.min(97, ((clientX - r.left) / r.width) * 100)));
-  };
+  }, []);
 
   return (
     <section
@@ -72,12 +72,14 @@ export default function TransitionMoment({ id }: { id: string }) {
       >
         <div
           ref={sliderRef}
-          className="relative aspect-video overflow-hidden cursor-ew-resize select-none"
-          onMouseDown={() => setIsDragging(true)}
-          onMouseUp={() => setIsDragging(false)}
-          onMouseLeave={() => setIsDragging(false)}
-          onMouseMove={(e) => isDragging && move(e.clientX)}
-          onTouchMove={(e) => move(e.touches[0].clientX)}
+          className="relative aspect-video overflow-hidden cursor-ew-resize select-none touch-none"
+          onPointerDown={(e) => {
+            e.currentTarget.setPointerCapture(e.pointerId);
+            setIsDragging(true);
+          }}
+          onPointerMove={(e) => isDragging && move(e.clientX)}
+          onPointerUp={() => setIsDragging(false)}
+          onPointerCancel={() => setIsDragging(false)}
         >
           {/* AFTER — po */}
           <div className="absolute inset-0">
@@ -101,7 +103,7 @@ export default function TransitionMoment({ id }: { id: string }) {
                 />
               </div>
             )}
-            <span className="absolute bottom-3 right-3 font-sans text-[#96a48e]/60 text-[8px] tracking-widest uppercase z-10">
+            <span className="absolute bottom-4 right-4 font-sans text-white/80 text-[11px] tracking-[0.06em] z-10 drop-shadow">
               {labelAfter}
             </span>
           </div>
@@ -129,7 +131,7 @@ export default function TransitionMoment({ id }: { id: string }) {
                 />
               </div>
             )}
-            <span className="absolute bottom-3 left-3 font-sans text-[#6b8c60]/60 text-[8px] tracking-widest uppercase z-10">
+            <span className="absolute bottom-4 left-4 font-sans text-white/80 text-[11px] tracking-[0.06em] z-10 drop-shadow">
               {labelBefore}
             </span>
           </div>

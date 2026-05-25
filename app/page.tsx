@@ -55,8 +55,10 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollTo = (id: string) =>
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  const scrollTo = (id: string) => {
+    const el = document.querySelector<HTMLElement>(`[data-sid="${id}"]`) ?? document.getElementById(id);
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <main className="relative">

@@ -14,7 +14,7 @@ export default function KaPasakojaSodaiSection({ id }: { id: string }) {
   const photo17 = resolvePhoto("photo17");
 
   return (
-    <section id={id} className="relative min-h-[80vh] flex items-center py-32 bg-[#f2f5ee]">
+    <section id={id} className="relative min-h-screen flex items-center py-24 bg-[#f2f5ee]">
 
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#cdd8c5]/60 to-transparent pointer-events-none" />
 
@@ -25,7 +25,7 @@ export default function KaPasakojaSodaiSection({ id }: { id: string }) {
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 2, ease: EASE }}
           viewport={{ once: true, margin: "-40px" }}
-          className="mb-16"
+          className="mb-14"
         >
           <h2
             className="font-serif font-normal text-[#2c302a]/75 leading-tight"
@@ -36,7 +36,7 @@ export default function KaPasakojaSodaiSection({ id }: { id: string }) {
           <div className="w-12 h-px bg-[#9ab08e]/35 mt-5" />
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.8fr] gap-14 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.72fr] gap-10 lg:gap-16 items-start">
 
           {/* Text column */}
           <div>
@@ -56,7 +56,7 @@ export default function KaPasakojaSodaiSection({ id }: { id: string }) {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.8, delay: 0.65, ease: EASE }}
               viewport={{ once: true, margin: "-40px" }}
-              className="font-serif text-[#5e6858]/80 leading-relaxed mt-10"
+              className="font-serif text-[#5e6858]/80 leading-relaxed mt-8"
               style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
             >
               {body2}
@@ -67,7 +67,7 @@ export default function KaPasakojaSodaiSection({ id }: { id: string }) {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.8, delay: 0.9, ease: EASE }}
               viewport={{ once: true, margin: "-40px" }}
-              className="font-serif text-[#5e6858]/80 leading-relaxed mt-10"
+              className="font-serif text-[#5e6858]/80 leading-relaxed mt-8"
               style={{ fontSize: "clamp(1.05rem, 1.8vw, 1.35rem)" }}
             >
               {body3}
@@ -82,12 +82,12 @@ export default function KaPasakojaSodaiSection({ id }: { id: string }) {
               transition={{ duration: 2, delay: 0.3, ease: EASE }}
               viewport={{ once: true, margin: "-40px" }}
             >
-              <div className="relative overflow-hidden" style={{ aspectRatio: "4/5" }}>
+              <div className="relative overflow-hidden" style={{ aspectRatio: "3/4" }}>
                 <Image
                   src={photo17.src}
                   alt={photo17.alt}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 38vw"
+                  sizes="(max-width: 1024px) 100vw, 36vw"
                   className="object-cover object-center"
                 />
               </div>

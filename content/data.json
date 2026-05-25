@@ -35,8 +35,8 @@
   "photo2": { "src": "/images/photo2.jpg", "alt": "photo2", "caption": "\"Tarybų Lietuva\" 1969m. LRT archyvas, stopkadro nuotr." },
 
   "quote1": "“Aš savo sodą gavau 79 metais, buvo skirstoma per darbovietes…sodininko sklypo plotas 6 arai…kiek duoda…ar šimtui žmonių…priklauso nuo darbovietės.” -Pašnekvoas 1",
-  "transition_label_before": "prieš — before",
-  "transition_label_after":  "po — after",
+  "transition_label_before": "Prieš sodų sukūrimą",
+  "transition_label_after":  "Po sodų sukūrimo",
   "transition_foot_before":  "prieš",
   "transition_foot_drag":    "vilkite",
   "transition_foot_after":   "po",
